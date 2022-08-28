@@ -1,0 +1,74 @@
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.hero__text{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.hero__text >h2{
+    font-weight: 800;
+font-size: 90px;
+color: #FFFFFF;
+}
+.hero__img{
+    width: 43%;
+    height: auto;
+}
+.hero__money{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top:100px;
+    left: -30px;
+    z-index: -1;
+}
+.hero__text > a{
+    padding: 6px 13px;
+    border-radius: 5px;
+    background: #FFBE03;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 963px){
+    .hero{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero__money{
+        width: 100%;
+        top: 150px;
+    }
+    .hero__text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero__img{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+   .hero__text  >h2{
+    font-size: 60px;
+   }
+    .hero__text >a{
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+    .hero__img{
+        width: 100%;
+    }
+}
