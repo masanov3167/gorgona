@@ -1,0 +1,722 @@
+/* header styles */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 4% 7%;
+}
+
+.header__logo{
+    display: block;
+}
+.header__logo >img{
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin-left: -40px;
+}
+.header__nav__item{
+     height: 20px;
+}
+.header__nav__link{
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header__nav__link:hover::after{
+    display: block;
+     content: "";
+     width: 100%;
+     height: 3.5px;
+     background: #FFBE03;
+     margin-top: 12px;
+     border-radius: 5px;
+}
+.header__cabinet{
+    padding: 10px 18px;
+    border-radius: 5px;
+    background: #FFBE03;
+    font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.toggle{
+   width: 30px;
+   height: 30px;
+   background: url('../images/nav3.jpg') no-repeat;
+   background-size: cover;
+   display: none;
+}
+.close__nav{
+    width: 30px;
+   height: 30px;
+   background: url('../images/close_nav.jpg') no-repeat;
+   background-size: cover;
+   display: none;
+}
+
+/* hero styles */
+
+.hero{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__img{
+    width: 100%;
+    height: auto;
+}
+.hero__money{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 30px;
+    left: -30px;
+    z-index: -1;
+}
+.hero__button{
+    padding: 10px 18px;
+    border-radius: 5px;
+    background: #FFBE03;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: -3%;
+}
+
+
+/* info section style */
+.info{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px auto;
+}
+.info__bitcoin{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info__bitcoin >img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-left: -60px;
+}
+.info__bitcoin >span, .info__static >span{
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.more__info{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #FFBE03;
+    font-weight: 600;
+    font-size: 17px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 20px;
+}
+.text__yellow{
+    color: #FFBE03;
+}
+.info__static{
+    width: 48%;
+}
+.info__static >h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 130px;
+}
+.info__static > h3 >b{
+    border-left: 3px solid #FFBE03;
+}
+
+.info__static >img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* plan section styles */
+.plan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.plan__text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.plan__text > h3{
+    font-weight: 900;
+font-size: 80px;
+color: #FFFFFF;
+ margin-top: -25px;
+}
+
+.plan__text > div{
+    width: 55%;
+}
+.plan__text > div > h3{
+    color: white;
+}
+.plan__text > div > p{
+    color: white;
+    margin-left: 7px;
+    font-size: 14px;
+}
+.plan__text > div > span{
+    color: white;
+}
+.plan__text > div > h3 >b{
+    border-left: 3px solid #FFBE03;
+}
+
+.plan__form__container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.plan__card{
+    width: 35%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: -190px;
+}
+.plan__card > h2:first-child{
+    width: 100%;
+    background: #FFBE03;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #000000;
+}
+.plan__card > h2{
+    font-weight: 900;
+    font-size: 35px;
+    color: #000000;
+}
+.plan__card > span{
+    font-weight: 800;
+    font-size: 20px;
+    color: #000000;
+}
+.plan__card > p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.plan__form__container > div:last-child{
+    width: 59%;
+    height: auto;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin-top: 80px;
+}
+.plan__form__card{
+    width: 48%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 30px;
+}
+.plan__form{
+    width: 48%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.plan__form > input{
+    width: 90%;
+    background: #f2f1f1;
+border: 1px solid #000000;
+border-radius: 30px;
+padding: 7px 10px;
+outline: none;
+margin: 20px 0;
+}
+
+.plan__form__button{
+    background: #FFBE03;
+border-radius: 30px;
+padding: 4px 10px;
+border: none;
+font-weight: 700;
+font-size: 15px;
+color: #FFFFFF;
+}
+
+/* shag styles */
+
+.shag{
+    width: 100%;
+    margin: 50px 0;
+    padding-top: 80px;
+}
+.shag__bg, .strength__bg{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+.shag__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px !important;
+}
+.shag__item{
+    width: 470px;
+    height: 250px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.shag__item > h2{
+    font-weight: 700;
+font-size: 40px;
+color: #FFBE03;
+}
+.shag__item > span{
+    font-weight: 700;
+font-size: 22px;
+color: #000000;
+}
+
+/* strength styles */
+.strength{
+    margin-top: 50px;
+}
+.strength > h2{
+    margin-top: 13rem;
+    text-align: center;
+    color: white;
+}
+.strength__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px !important;
+}
+.strength__item{
+    width: 470px;
+    height: 200px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 2;
+}
+.strength__bg{
+    margin-top: -80px;
+    z-index: -5;
+}
+
+/* referal section styles */
+
+.referal{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.referal__card{
+    width: 40%;
+    padding: 30px 40px;
+    background: #FFFFFF;
+border-radius: 30px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.referal__card >h2{
+    text-align: center;
+}
+.referal__card > span, .referal__card > p {
+    font-weight: 600;
+font-size: 20px;
+line-height: 39px;
+color: #343232;
+}
+.referal__card >p{
+    text-align: center;
+    font-size: 16px;
+}
+.referal__text{
+    width: 55%;
+}
+.referal__text > h2{
+    border-left: 3px solid #FFBE03;
+}
+
+.referal__text > p{
+    font-weight: 600;
+font-size: 16px;
+line-height: 29px;
+color: white;
+margin: 30px 0;
+}
+
+/* footer section styles */
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 10rem auto 3rem auto;
+}
+.footer::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: white;
+    margin-top: -4rem;
+    
+}
+.footer__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer__main > img{
+    width: 20%;
+    height: auto;
+    /* margin: 0 auto; */
+}
+.footer__main >div{
+    width: 36%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer__main > div > h2{
+    font-weight: 700;
+font-size: 17px;
+}
+.footer__main >div >h2 >b{
+    border-left: 3px solid #FFBE03;
+}
+
+.footer__main > div > p{
+    font-weight: 600;
+font-size: 12px;
+color: white;
+margin-top: 20px;
+}
+
+.footer >a{
+    display: block;
+    margin-top: 30px;
+}
+
+/* media styles all */
+
+@media only screen and (max-width: 963px){
+    .header__nav{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+        z-index: 3;
+        background: linear-gradient(135deg,rgb(25, 27, 28) 0%,rgb(22, 12, 32) 100%);
+        padding: 20px;
+        transition-duration: 0.8s;
+        transform: translateY(-150%);
+    }
+    .header__nav__item:hover{
+        width: 34%;
+    }
+    .header__cabinet{
+        display: none;
+    }
+    .toggle, .close__nav{
+        display: block;
+    }
+    .hero__button{
+        font-size: 18px;
+        padding: 7px 15px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .info__bitcoin{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .info__bitcoin >img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .info__static{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .plan{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .plan__text{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .plan__text > div{
+        width: 100%;
+    }
+    .plan__form__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .plan__card{
+        margin-top: 70px;
+        width: 65%;
+    }
+    .plan__form__container > div:last-child{
+        width: 90%;
+    }
+
+    .referal{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .referal__card{
+        width: 85%;
+        padding: 30px 40px;
+        margin: 0 auto;
+    }
+    .referal__text{
+        width: 85%;
+        margin: 30px auto;
+    }
+    .referal__text >img{
+        width: 60%;
+        height: auto;
+    }
+
+    .footer__main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .footer__main > img{
+        width: 60%;
+        height: auto;
+        margin: 0 auto 0 27%;
+    }
+    .footer__main >div{
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .footer__main > div > h2{
+    font-size: 15px;
+    }
+    .footer__main > div > p{
+    font-size: 11px;
+    margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .hero__button{
+        font-weight: 500;
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+    .info__bitcoin >span, .info__static >span{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .more__info{
+        font-weight: 500;
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+    .plan__card{
+        width: 100%;
+    }
+    .plan__card > h2{
+        font-size: 20px !important;
+    }
+    .plan__card > span{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .plan__card > p{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .plan__form__container >div:last-child{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+    .plan__form__card, .plan__form{
+        width: 100%;
+    }
+    .plan__form{
+        margin-top: 20px;
+    }
+
+    .referal__card{
+        width: 100%;
+    }
+    .referal__text{
+        width: 100%;
+    }
+
+    .strength__bg{
+        margin-top: 23rem;
+    }
+
+    .shag__item{
+        height: 300px;
+        padding: 13px 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .shag__item >h2{
+        font-size: 28px;
+    }
+    .shag__item >span{
+        font-size: 20px;
+    }
+    .shag__item >p{
+        font-size: 16px;
+    }
+    .strength__item{
+        height: auto;
+        padding: 13px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .strength__item >h2{
+        font-size: 20px;
+    }
+    .strength__item >span{
+        font-size: 14px;
+    }
+    .footer__main > img{
+        width: 80%;
+        height: auto;
+        margin: 0 auto 0 19%;
+    }
+    .footer__main >div{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .footer__main > div > h2{
+    font-size: 15px;
+    }
+    .footer__main > div > p{
+    font-size: 11px;
+    margin-top: 15px;
+    }
+}
+
+
+
+.show__header__nav{
+    transform: scale(1);
+}
+
+.d-none{
+    display: none;
+}
