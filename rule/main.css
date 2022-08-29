@@ -1,0 +1,46 @@
+.rule{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10rem 0;
+}
+
+.rule::after, .rule::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 7px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+.rule::before{
+    margin-top: -3rem;
+}
+
+.rule >h2{
+    font-weight: 700;
+font-size: 30px;
+color: #FFBE03;
+}
+.rule >span{
+    font-weight: 700;
+font-size: 17px;
+color: #FFFFFF;
+}
+
+.rule__list{
+    margin-top: 3rem;
+}
+.rule__item{
+    margin: 3rem 0;
+    color: white;
+}
+.rule__item >h2{
+    font-weight: 700;
+font-size: 25px;
+}
+.rule__item > span{
+    font-weight: 700;
+    font-size: 15px;
+}

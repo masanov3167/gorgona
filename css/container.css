@@ -23,3 +23,7 @@ a{
 .text__yellow{
     color: #FFBE03;
 }
+
+.d-none{
+    display: none;
+}

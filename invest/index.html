@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости - Gorgona</title>
+    <title>ИНВЕСТОРАМ - Gorgona</title>
     <link rel="stylesheet" href="../css/container.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../news/hero.css">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -15,19 +16,19 @@
 
         <ol class="header__nav">
             <li class="header__nav__item">
-                <a class="header__nav__link" href="/">О компании</a>
+                <a class="header__nav__link" href="/#info">О компании</a>
             </li>
             <li class="header__nav__item">
                 <a class="header__nav__link" href="/news">Новости</a>
             </li>
             <li class="header__nav__item">
-                <a class="header__nav__link" href="/">FAQ</a>
+                <a class="header__nav__link" href="/#strength">FAQ</a>
             </li>
             <li class="header__nav__item">
-                <a class="header__nav__link" href="/">Инвесторам</a>
+                <a class="header__nav__link" href="/invest">Инвесторам</a>
             </li>
             <li class="header__nav__item">
-                <a class="header__nav__link" href="/">Правила</a>
+                <a class="header__nav__link" href="/rule">Правила</a>
             </li>
             <li class="header__nav__item"> 
                 <a class="header__nav__link" href="/contact">Контакты</a>
@@ -41,6 +42,76 @@
     </header>
 
     <main class="container">
+        <section class="hero">
+            <picture style="padding: 0;">
+                <source srcset="../images/pul500.png" media="(max-width: 500px)">
+                <source srcset="../images/pul750.png" media="(max-width: 750px)">
+                <source srcset="../images/pul1000.png" media="(max-width: 1000px)">
+                <source srcset="../images/pul1250.png" media="(max-width: 1250px)">
+                <source srcset="../images/pul1500.png" media="(max-width: 1500px)">
+                <img class="hero__money" src="../images/pulall.png" alt="Flowers">
+            </picture>
+
+            <div class="hero__text">
+                <h2>ИНВЕСТ</h2>
+                <a href="#">Начать инвестировать</a>
+            </div>
+
+            <img class="hero__img" src="../images/meduza.png" alt="Gorgona company">
+        </section>
+
+        <section class="invest">
+            <div class="invest__card">
+                <h2>ИНВЕСТИЦИИ GORGONA COMPANY</h2>
+                <span>Мы группа экспертов, специализирующихся на торговле криптовалютой и управлении рисками. В течение нескольких лет мы наблюдали за рынком криптовалют и за тем, как мы можем извлечь выгоду из колебаний цен. Со временем мы набрались опыта и изучили новые техники, чтобы снизить риск, максимизировать нашу прибыль и поддерживать стабильный доход в течение длительного времени.</span>
+            </div>
+            <img class="invest__img" src="../images/invest.png" alt="invest image">
+        </section>
+
+        <section class="plan">
+            <div class="plan__text">
+                <h3>ПЛАН</h3>
+                <div>
+                    <h3> <b class="text__yellow"> &nbsp;ИНВЕСТИЦИОННЫЙ</b> ПЛАН</h3>
+                    <p>План создан для всех. Просто, легко и выгодно.</p>
+                    <br> <br>
+                    <span>
+                        <b class="text__yellow">0.75-3.3% ЕЖЕДНЕВНО</b> - 365 ДНЕЙ <br> <br> <br> <b class="text__yellow">ПЛАТЕЖИ, ПОДДЕРЖИВАЕМЫЕ ДЕПОЗИТОМ:</b> <br>PERFECT MONEY, QIWI, PAYEER, VISA, MASTERCARD, BTC, ETH, BNB(BEP2), LTC, TRX, DASH, DOGE, USDT, BUSD, XRP. <br> <br> <b class="text__yellow">МИН./МАКС. ДЕПОЗИТ:</b> <br>ОТ 50 ДОЛЛАРОВ США ДО 500 000 ДОЛЛАРОВ США <br> <br> <b class="text__yellow">МИН. ВЫВОД:</b> <br> 5 ДОЛЛАРОВ США
+                    </span>
+                </div>
+            </div>
+
+            <div class="plan__form__container">
+                <div class="plan__card">
+                    <h2>- ПРЕМИУМ - </h2>
+                    <br>
+                    <h2>0.75-3.3%</h2>
+                    <span>ГОДОВЫХ</span>
+                    <br>
+                    <p>СРОК 12 МЕСЯЦЕВ</p>
+                    <br>
+                    <p>МИНИМАЛЬНЫЙ <br> ВЫВОД - 5$</p>
+                </div>
+
+                <div>
+                    <div class="plan__form__card">
+                        <h3>ОБЩАЯ ПРИБЫЛЬ:</h3>
+                        <h2 class="text__yellow">434567 USD</h2>
+                        <br> 
+                        <h3>ОБЩИЙ ПРОЦЕНТ:</h3>
+                        <h2 class="text__yellow">7654 %</h2>
+                    </div>
+
+                    <form class="plan__form" autocomplete="off">
+                        <h3><b class="text__yellow">СУММА </b>ИНВЕСТИЦИЙ:</h3>
+                        <input class="plan__form__input" type="text" placeholder="Введите сумму" required>
+                        <button class="plan__form__button" type="submit">  Инвестировать</button>
+                        <span class="verify__text d-none">&#10004; This form was sent succesfully</span>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <section class="referal">
             <div class="referal__card">
                 <h2 class="text__yellow">ДЛЯ ВАС СУЩЕСТВУЕТ 3 УРОВНЯ РЕФЕРАЛЬНОЙ ПРОГРАММЫ:</h2> <br> <br>
@@ -75,6 +146,7 @@
     </footer>
     
     <script src="../js/header.js"></script>
+    <script src="../js/main.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
