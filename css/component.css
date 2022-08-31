@@ -69,6 +69,9 @@ color: #FFFFFF;
    display: none;
 }
 
+.secret__item{
+    display: none;
+}
 /* referal section styles */
 
 .referal{
@@ -184,7 +187,7 @@ margin-top: 20px;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 350px;
+        height: 400px;
         z-index: 3;
         background: linear-gradient(135deg,rgb(25, 27, 28) 0%,rgb(22, 12, 32) 100%);
         padding: 20px;
@@ -207,16 +210,16 @@ margin-top: 20px;
         flex-direction: column-reverse;
     }
     .referal__card{
-        width: 85%;
+        width: 70%;
         padding: 30px 40px;
         margin: 0 auto;
     }
     .referal__text{
-        width: 85%;
+        width: 90%;
         margin: 30px auto;
     }
     .referal__text >img{
-        width: 60%;
+        width: 50%;
         height: auto;
     }
     
@@ -246,6 +249,9 @@ margin-top: 20px;
     font-size: 11px;
     margin-top: 15px;
     }
+    .secret__item{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -254,6 +260,10 @@ margin-top: 20px;
     }
     .referal__text{
         width: 100%;
+    }
+
+    .referal__text >h2{
+        font-size: 19px;
     }
 
     .footer__main > img{

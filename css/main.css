@@ -320,7 +320,7 @@ color: #000000;
         flex-direction: column;
     }
     .info__bitcoin{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     .info__bitcoin >img{
@@ -328,12 +328,13 @@ color: #000000;
         margin: 0 auto;
     }
     .info__static{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
 
     .plan{
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -361,6 +362,9 @@ color: #000000;
         width: 90%;
     }
 
+    .shag__bg, .strength__bg{
+        margin-top: 27rem;
+    }
     
 }
 @media only screen and (max-width: 550px){
@@ -377,6 +381,17 @@ color: #000000;
         font-weight: 500;
         font-size: 13px;
         padding: 5px 12px;
+    }
+
+    .info__bitcoin, .info__static{
+        width: 100%;
+    }
+
+    .plan{
+        width: 100%;
+    }
+    .plan__text{
+        width: 100%;
     }
     .plan__card{
         width: 100%;

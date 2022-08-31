@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Gorgona</title>
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="/index.html"><img  src="../images/logo2.png" alt="logo"></a>
+
+        <ol class="header__nav">
+            <li class="header__nav__item">
+                <a class="header__nav__link" href="/#info">О компании</a>
+            </li>
+            <li class="header__nav__item">
+                <a class="header__nav__link" href="/news">Новости</a>
+            </li>
+            <li class="header__nav__item">
+                <a class="header__nav__link" href="/#strength">FAQ</a>
+            </li>
+            <li class="header__nav__item">
+                <a class="header__nav__link" href="/invest">Инвесторам</a>
+            </li>
+            <li class="header__nav__item">
+                <a class="header__nav__link" href="/rule">Правила</a>
+            </li>
+            <li class="header__nav__item"> 
+                <a class="header__nav__link" href="/contact">Контакты</a>
+            </li>
+            <li class="header__nav__item secret__item">
+                <a class="header__nav__link" href="/login">Логин</a>
+            </li>
+            <li class="close__nav"></li>
+        </ol>
+
+        <a class="header__cabinet" href="/login">Логин</a>
+
+        <div class="toggle"></div>
+    </header>
+
+    <main class="container">
+        <form class="form" autocomplete="off">
+            <h2>Регистрация</h2>
+            <span>Создат профиль</span>
+            <input class="form__name" placeholder="введите свой Имя" type="text" minlength="5" maxlength="30">
+            <input class="form__login" placeholder="создать свои логин" type="text" minlength="5" maxlength="20">
+            <input class="form__email" placeholder="введите свой емаил" type="text" minlength="5" maxlength="30">
+            <input class="form__pass" placeholder="введите свой пароль" type="text" minlength="5" maxlength="30">
+            <button type="submit">войти</button>
+
+            <p>у тебя есть профиля?</p>
+            <a href="/login">открить профиль</a>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <img src="../images/footer_pic.png" alt="footer-picture">
+            <div>
+                <h2 class="text__yellow"> <b>&nbsp; КОНФИДЕНЦИАЛЬНЫЕ</b> ДАННЫЕ</h2>
+                <p>Данные которые вы предоставляете нам относительно вашего полного имени, адреса электронной почты, криптовалютных кошельков, на 100% защищены и никогда не будут переданы третьим лицам. Все операции доступны только вам и GORGONA COMPANY. <br> Мы используем супербезопасный сервер для хранения данных, защищенный от любых атак. Наш веб-сайт использует соединение SSL SHA-256 с RSA Encryption. Криптовалютные средства хранятся на защищенных кошельках, к которым третьи лица полностью не могут получить доступ. <br> Наша команда состоит из квалифицированных людей, которые придерживаются всех правил безопасности и конфиденциальности.</p>
+            </div>
+
+            <div>
+                <h2 class="text__yellow"> <b>&nbsp; СОГЛАШЕНИЕ</b> О НЕРАЗГЛАШЕНИИ</h2>
+                <p>У нас есть организационные и технические процессы и процедуры для защиты вашей личной информации. Тем не менее, никакая электронная передача через Интернет или технологию хранения информации не может быть гарантирована на 100%, поэтому мы не можем обещать или гарантировать, что хакеры, киберпреступники или другие несанкционированные третьи стороны не смогут нарушить нашу безопасность и ненадлежащим образом собирать, получать доступ, украсть или изменять вашу информацию. <br> Каковы ваши права? В зависимости от того, где вы находитесь географически, применимое законодательство о конфиденциальности может означать, что у вас есть определенные права в отношении вашей личной информации.</p>
+            </div>
+        </div>
+        <a class="text__yellow" href="mailto:meduzacompany@gmail.com">meduzacompany@gmail.com</a>
+    </footer>
+    
+    <script src="../js/header.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
