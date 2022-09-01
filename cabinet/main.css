@@ -9,7 +9,6 @@
   }
 .cabinet__list{
     width: calc(100% - 250px);
-    border: 1px solid red;
     padding: 20px 25px;
     display: flex;
     justify-content: space-between;
@@ -41,4 +40,29 @@ align-items: center;
     height: 360px;
     padding: 15px 20px;
     overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 600px){
+    .cabinet{
+        display: flex;
+        flex-direction: column;
+    }
+    .cabinet__list{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cabinet__item{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .cabinet__item{
+        width: 100%;
+    }
 }
