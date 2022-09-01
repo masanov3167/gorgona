@@ -1,8 +1,4 @@
-.cabinet{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-}
+
 
 .cabinet__item > ::-webkit-scrollbar {
    display: none;

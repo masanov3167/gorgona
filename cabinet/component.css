@@ -1,3 +1,9 @@
+.cabinet{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
 .sidebar{
     width: 250px;
     height: 100vh;
@@ -57,20 +63,21 @@
 
 .modal__body{
     width: 300px;
-    height: 250px;
+    height: auto;
     background: white;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 10px 15px;
 }
 .modal__body > h2{
     font-weight: 800;
 }
 
 .modal__btn__wrapper{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;

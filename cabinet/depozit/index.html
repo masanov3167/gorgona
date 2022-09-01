@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет - Gorgona company</title>
+    <link rel="stylesheet" href="../../css/container.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="cabinet">
+            <div class="sidebar">
+                <a class="sidebar__item" href="/cabinet"> <b>&#9673;</b> КАБИНЕТ</a> 
+                <a class="sidebar__item" href="/cabinet/depozit"> <b>&#9673;</b> ДЕПОЗИТЫ</a> 
+                <a class="sidebar__item" href="/cabinet/partner"> <b>&#9673;</b> ПАРТНЕРЫ</a> 
+                <a class="sidebar__item" href="/cabinet/settings"> <b>&#9673;</b> НАСТРОЙКИ</a> 
+                <a class="sidebar__item" href="/cabinet/open_depozit"> <b>&#9673;</b> ОТКРЫТЬ ДЕПОЗИТ</a> 
+                <a class="sidebar__item" href="/cabinet/vivod_sredstv"> <b>&#9673;</b> ВЫВОД СРЕДСТВ</a> 
+                <span class="sidebar__item log__out" ><b>&#9673;</b> ВЫХОД</span>
+                <div class="toggle"></div>
+             </div>
+
+             <div class="depozit">
+                <div class="depozit__time">
+                    <span>СЛЕДУЮЩЕЕ НАЧИСЛЕНИЕ ЧЕРЕЗ:</span>
+                    <time class="old__time">00:00:00</time>
+                </div>
+
+                <div class="depozit__card">
+                    <h2>- ПРЕМИУМ - </h2>
+                    <br>
+                    <span>0.75-3.3%</span>
+                    <p class="text__yellow">ГОДОВЫХ</p>
+                    <br>
+                    <span>СРОК МЕСЯЦЕВ</span>
+                    <p class="text__yellow">12</p>
+                    <br>
+                    <span>МИНИМАЛЬНЫЙ ВЫВОД</span>
+                    <p class="text__yellow">5$</p>
+                </div>
+
+                <div class="depozit__card">
+                    <h2>- ЧИСЛО - </h2>
+                    <br>
+                    <span>ДАТА ОТКРЫТИЯ:</span>
+                    <p class="text__yellow">23.07.2021</p>
+                    <br>
+                    <span>СУММА ВКЛАДА:</span>
+                    <p class="text__yellow">300$</p>
+                    <br>
+                    <span>ПОЛУЧЕНО:</span>
+                    <p class="text__yellow">4$</p>
+                </div>
+             </div>
+        </section>
+       
+    </main>
+
+
+    <div class="modal">
+        <div class="modal__body">
+            <span>Действительно ли хотите выйти с аккаунта?</span>
+                
+            <div class="modal__btn__wrapper">
+                <button class="log__out__btn" >Да</button>
+                <button class="close__modal__btn">Нет</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../sidebar.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
