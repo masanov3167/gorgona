@@ -10,30 +10,6 @@ if(token){
 }
 
 form.addEventListener('submit', e =>{
-    var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-
-    if(email.value.match(mailformat)){
-        alert('okey')
-    }
-
     e.preventDefault();
+    alert('okey bro')
 });
-
-
-
-function ValidateEmail(inputText)
-{
-var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-if(inputText.match(mailformat))
-{
-alert("You have entered a valid email address!");    //The pop up alert for a valid email address
-form.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");    //The pop up alert for an invalid email address
-// document.form1.text1.focus();
-return false;
-}
-}
