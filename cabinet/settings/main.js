@@ -1,14 +1,9 @@
-const timeElement = document.querySelector('.old__time');
+const navbar = document.querySelectorAll('.sidebar__item');
+const header = document.querySelector('.sidebar')
 
-const time = () =>{
-    const date = new Date();
-    const hours = date.getHours().toString().padStart(2,0);
-    const minute = date.getMinutes().toString().padStart(2,0);
-    const second = date.getSeconds().toString().padStart(2,0);
-    return `${hours}:${minute}:${second}`;
+for(let i of navbar){
+    i.addEventListener('click', ()=>{
+        header.classList.remove('show');
+        console.log(header);
+    })
 }
-
-
-setInterval(() =>{
-    timeElement.textContent = time();
-}, 1000)
