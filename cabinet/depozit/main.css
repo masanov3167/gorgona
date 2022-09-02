@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .depozit__time{
@@ -46,15 +46,12 @@ color: #000000;
 border-radius: 30px 30px 0px 0px;
 text-align: center;
 }
-.depozit__card__title:hover ~ .depozit__card__body{
-    display: block;
-}
+
 .depozit__card__body{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20px auto;
-    display: none;
 }
 .depozit__card__body >span{
     font-weight: 800;
@@ -79,20 +76,43 @@ text-align: center;
     .depozit{
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 0;
     }
+
+   
+    
     .depozit__time{
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
     }
+
+    .depozit__card{
+        background: none;
+    }
+    .depozit__card__body{
+        display: none;
+    }
+    .depozit__card > h2{
+        border-radius: 20px;
+    }
+    .depozit__card__title:hover ~ .depozit__card__body{
+        display: flex;
+    }
+    .depozit__card__title:hover, .depozit__card{
+        background: rgba(255, 255, 255, 0.9);
+    }
+    .depozit__card__title:hover{
+        background: #FFBE03;
+    }
 }
 
 @media only screen and (max-width: 350px){
-    .depozit__card >span{
+    .depozit__card__body >span{
     font-size: 17px;
     }
-    .depozit__card >p{
+    .depozit__card__body >p{
         font-size: 15px;
     }
 }
