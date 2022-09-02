@@ -97,13 +97,14 @@ text-align: center;
     .depozit__card > h2{
         border-radius: 20px;
     }
-    .depozit__card__title:active ~ .depozit__card__body{
+    
+    .depozit__card__title:hover ~ .depozit__card__body{
         display: flex;
     }
-    .depozit__card__title:active, .depozit__card{
+    .depozit__card__title:hover, .depozit__card{
         background: rgba(255, 255, 255, 0.9);
     }
-    .depozit__card__title:active{
+    .depozit__card__title:hover{
         background: #FFBE03;
     }
 }
