@@ -1,0 +1,84 @@
+.settings{
+    width: calc(100% - 250px);
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.settings__item{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 35px;
+}
+
+.settings__item > form{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.settings__item > form > div{
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.settings__item > form > div > input{
+    width: 100%;
+    height: 30px;
+background: #f0ebeb;
+border-radius: 30px;
+outline: none;
+border: none;
+padding: 10px 15px;
+margin: 10px 0;
+}
+.settings__item > form > div > label{
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: -7px;
+}
+.settings__item > form > button{
+    margin: 20px auto 0 auto;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
+    background: #FFBE03;
+    color: white;
+}
+
+
+@media only screen and (max-width: 700px){
+    .settings__item{
+        padding: 15px 20px;
+    }
+    .settings__item > form > div > label{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .settings{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 460px){
+    .settings__item > form > div{
+        width: 100%;
+    }
+}

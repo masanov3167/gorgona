@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет - Gorgona company</title>
+    <link rel="stylesheet" href="../../css/container.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="cabinet">
+            <div class="sidebar">
+                <a class="sidebar__item" href="/cabinet"> <b>&#9673;</b> КАБИНЕТ</a> 
+                <a class="sidebar__item" href="/cabinet/depozit"> <b>&#9673;</b> ДЕПОЗИТЫ</a> 
+                <a class="sidebar__item" href="/cabinet/partner"> <b>&#9673;</b> ПАРТНЕРЫ</a> 
+                <a class="sidebar__item" href="/cabinet/settings"> <b>&#9673;</b> НАСТРОЙКИ</a> 
+                <a class="sidebar__item" href="/cabinet/operations"> <b>&#9673;</b> ОПЕРАЦИИ</a> 
+                <a class="sidebar__item" href="/cabinet/vivod_sredstv"> <b>&#9673;</b> ВЫВОД СРЕДСТВ</a> 
+                <a class="sidebar__item" href="/cabinet/settings/#personal_data"> <b>&#9673;</b> Личние данние</a> 
+                <a class="sidebar__item" href="/cabinet/settings/#change_password"> <b>&#9673;</b> Изменить пароль</a> 
+                <a class="sidebar__item" href="/cabinet/settings/#wallets"> <b>&#9673;</b> Кошельки</a> 
+                <span class="sidebar__item log__out" ><b>&#9673;</b> ВЫХОД</span>
+                <div class="close__toggle"></div>
+             </div>
+
+             <div class="toggle">
+                <div class="open__toggle"></div>
+             </div>
+
+             <div class="settings">
+                <div id="personal_data" class="settings__item">
+                    <h2>Личние данние</h2>
+
+                    <form class="personal__form" autocomplete="off">
+                        <div>
+                            <label >логин</label>
+                            <input type="text" placeholder="логин *" required>
+                        </div>
+
+                        <div>
+                            <label >емаил</label>
+                            <input type="email" placeholder="емаил *" required>
+                        </div>
+
+                        <div>
+                            <label >город</label>
+                            <input type="text" placeholder="город *" required>
+                        </div>
+
+                        <div>
+                            <label >тел номер</label>
+                            <input type="text" placeholder="тел номер *" required>
+                        </div>
+
+                        <button type="submit">Сохранить</button>
+                    </form>
+                </div>
+
+                <div id="change_password" class="settings__item">
+                    <h2>изменить пароль</h2>
+
+                    <form class="password__form" autocomplete="off">
+                        <div>
+                            <label >Старый пароль</label>
+                            <input type="text" placeholder="Старый пароль *" required>
+                        </div>
+
+                        <div>
+                            <label >Новый пароль</label>
+                            <input type="text" placeholder="Новый пароль *" required>
+                        </div>
+
+                        <button type="submit">Сохранить</button>
+                    </form>
+                </div>
+
+                <div id="wallets" class="settings__item">
+                    <h2>кошельки</h2>
+
+                    <form class="wallets__form" autocomplete="off">
+                        <div>
+                            <label >Qiwi</label>
+                            <input type="text" placeholder="qiwi *" required>
+                        </div>
+
+                        <div>
+                            <label >bitcoin</label>
+                            <input type="text" placeholder="bitcoin *" required>
+                        </div>
+
+                        <div>
+                            <label >Qiwi</label>
+                            <input type="text" placeholder="qiwi *" required>
+                        </div>
+
+                        <div>
+                            <label >bitcoin</label>
+                            <input type="text" placeholder="bitcoin *" required>
+                        </div>
+
+                        <button type="submit">Сохранить</button>
+                    </form>
+                </div>
+             </div>
+        </section>
+       
+    </main>
+
+
+    <div class="modal">
+        <div class="modal__body">
+            <span>Действительно ли хотите выйти с аккаунта?</span>
+                
+            <div class="modal__btn__wrapper">
+                <button class="log__out__btn" >Да</button>
+                <button class="close__modal__btn">Нет</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../sidebar.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
