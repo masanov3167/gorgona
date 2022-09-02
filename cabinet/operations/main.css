@@ -1,4 +1,4 @@
-.partner{
+.operation{
     width: calc(100% - 250px);
     height: auto;
     padding: 30px 25px;
@@ -6,6 +6,141 @@
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operation__select{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto;
+}
+
+.operation__select__btn, .eps__form >button{
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
+    background: #FFBE03;
+    color: white;
+}
+.modal__wrapper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   background: linear-gradient(135deg,rgb(25, 27, 28) 0%,rgb(22, 12, 32) 100%);
+}
+.modal__wrapper > ::-webkit-scrollbar {
+    display: none;
+}
+.modal__content{
+    width: 400px;
+    height: 250px;
+    overflow-y: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.modal__content >h2{
+    text-align: center;
+    width: inherit;
+    height: auto;
+    background: #FFBE03;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    margin-top: 0;
+}
+.eps__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 50px 15px 20px 15px;
+}
+.eps__item{
+    width: 48%;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eps__form{
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eps__form >label{
+    font-weight: 700;
+    text-align: center;
+}
+.eps__form >input{
+    width: 90%;
+    height: 30px;
+background: #f0ebeb;
+border-radius: 30px;
+outline: none;
+border: none;
+padding: 10px 15px;
+margin: 10px 0;
+}
+.eps__input__error{
+   margin-bottom: 10px;
+   color: red;
+}
+.eps__form >div{
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin-bottom:15px;
+}
+.eps__form > div > span{
+    font-weight: 800;
+}
+.eps__sum{
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+
+
+
+.d-none{
+    display: none;
+}
+
+@media only screen and (max-width: 740px){
+    .eps__form{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .operation{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .modal__content{
+        width: 95%;
+    }
 }

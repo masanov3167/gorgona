@@ -28,8 +28,35 @@
                 <div class="open__toggle"></div>
              </div>
 
-             <div class="partner">
-                 
+             <div class="operation">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium ad, esse excepturi nulla ducimus quasi repudiandae sapiente ipsam saepe quam autem? In facilis reprehenderit esse ad illum accusantium amet?</p>
+
+                 <span class="operation__select">Виберите ЕПС</span>
+                 <button class="operation__select__btn">выбирать</button>
+                 <div class="modal__wrapper d-none">
+                    <div class="modal__content">
+                        <h2>выбирать</h2>
+                        <ol class="eps__list">
+                            <li data-eps="bitcoin" class="eps__item">bitcoin</li>
+                            <li data-eps="litcoin" class="eps__item">litcoin</li>
+                            <li data-eps="qiwi" class="eps__item">qiwi</li>
+                            <li data-eps="perfect" class="eps__item">perfect</li>
+                            <li data-eps="test2" class="eps__item">test</li>
+                            <li data-eps="kaxa3" class="eps__item">kaxa</li>
+                        </ol>
+                    </div>
+                 </div>
+
+                 <form class="eps__form" autocomplete="off">
+                    <label class="eps__value">Укажите сумма</label>
+                    <input class="eps__form__input" type="text" placeholder="Укажите сумма ... ">
+                    <label class="eps__input__error d-none">summa ne ukazan</label>
+                    <div>
+                        <span>Будут начисленю:</span>
+                        <p class="text__yellow eps__sum">0</p>
+                    </div>
+                    <button type="submit">Пополнить</button>
+                 </form>
              </div>
              </div>
         </section>
