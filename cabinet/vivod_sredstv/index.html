@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет - Gorgona company</title>
+    <link rel="stylesheet" href="../../css/container.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="cabinet">
+            <div class="sidebar">
+                <a class="sidebar__item" href="/cabinet"> <b>&#9673;</b> КАБИНЕТ</a> 
+                <a class="sidebar__item" href="/cabinet/depozit"> <b>&#9673;</b> ДЕПОЗИТЫ</a> 
+                <a class="sidebar__item" href="/cabinet/partner"> <b>&#9673;</b> ПАРТНЕРЫ</a> 
+                <a class="sidebar__item" href="/cabinet/settings"> <b>&#9673;</b> НАСТРОЙКИ</a> 
+                <a class="sidebar__item" href="/cabinet/operations"> <b>&#9673;</b> ОПЕРАЦИИ</a> 
+                <a class="sidebar__item" href="/cabinet/vivod_sredstv"> <b>&#9673;</b> ВЫВОД СРЕДСТВ</a> 
+                <span class="sidebar__item log__out" ><b>&#9673;</b> ВЫХОД</span>
+                <div class="close__toggle"></div>
+             </div>
+
+             <div class="toggle">
+                <div class="open__toggle"></div>
+             </div>
+
+             
+
+             <div class="operation">
+                <div class="balance__card">
+                    <span>Ваш баланс:</span>
+                    <time class="user__balance">123$</time>
+                </div>
+
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium ad, esse excepturi nulla ducimus quasi repudiandae sapiente ipsam saepe quam autem? In facilis reprehenderit esse ad illum accusantium amet?</p>
+
+                 <span class="operation__select">Виберите ЕПС</span>
+                 <button class="operation__select__btn">выбирать</button>
+                 <div class="modal__wrapper d-none">
+                    <div class="modal__content">
+                        <h2>выбирать</h2>
+                        <ol class="eps__list">
+                            <li data-eps="bitcoin" class="eps__item">bitcoin</li>
+                            <li data-eps="litcoin" class="eps__item">litcoin</li>
+                            <li data-eps="qiwi" class="eps__item">qiwi</li>
+                            <li data-eps="perfect" class="eps__item">perfect</li>
+                            <li data-eps="test2" class="eps__item">test</li>
+                            <li data-eps="kaxa3" class="eps__item">kaxa</li>
+                        </ol>
+                    </div>
+                 </div>
+
+                 <form class="eps__form" autocomplete="off">
+                    <label class="eps__value">Укажите сумма</label>
+                    <input class="eps__form__input" type="text" placeholder="Укажите сумма ... ">
+                    <label class="eps__input__error d-none">summa ne ukazan</label>
+                    <div>
+                        <span>Будут начисленю:</span>
+                        <p class="text__yellow eps__sum">0</p>
+                    </div>
+                    <button type="submit">Пополнить</button>
+                 </form>
+             </div>
+             </div>
+        </section>
+       
+    </main>
+
+
+    <div class="modal">
+        <div class="modal__body">
+            <span>Действительно ли хотите выйти с аккаунта?</span>
+                
+            <div class="modal__btn__wrapper">
+                <button class="log__out__btn" >Да</button>
+                <button class="close__modal__btn">Нет</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../sidebar.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
