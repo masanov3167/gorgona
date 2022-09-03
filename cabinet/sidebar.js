@@ -28,3 +28,8 @@ logOutBtn.addEventListener('click', () =>{
     modal.classList.remove('show');
     window.location.href = '/'
 });
+for(let i of item){
+    i.addEventListener('click', ()=>{
+        sidebar.classList.remove('show');
+    })
+}
