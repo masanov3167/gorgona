@@ -91,7 +91,7 @@ text-align: center;
 
     
     .depozit__card__body{
-        transition: height 0.4s;
+        transition: height 0.4s, opacity 0.4s;
         height: 0;
         opacity: 0;
     }

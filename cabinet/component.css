@@ -42,7 +42,7 @@
     top: 0;
     left: 0;
     display: none;
-    z-index: 2;
+    z-index: 4;
 }
 
 .open__toggle{
@@ -130,6 +130,7 @@
     }
     .toggle, .close__toggle{
         display: block;
+        z-index: 4;
     }
 }
 
