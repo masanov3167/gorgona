@@ -201,6 +201,12 @@ margin-top: 20px;
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 1000px){
+    .header__nav__link{
+        font-size: 17px;
+    }
+}
+
 
 @media only screen and (max-width: 963px){
     .header__nav{
@@ -286,6 +292,9 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width: 550px){
+    .header__nav{
+        width: 100%;
+    }
     .referal__card{
         width: 100%;
     }
