@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кабинет - Gorgona company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../../css/container.css">
     <link rel="stylesheet" href="../component.css">
     <link rel="stylesheet" href="./main.css">
@@ -13,19 +15,18 @@
 
     <main class="container">
         <section class="cabinet">
+            <div class="sidebar__header">
+                <span class="sidebar__item"> <i class="fa-solid fa-user-ninja"></i> Username</span>
+                <span class="sidebar__item toggle" ><i class="fa-solid fa-bars"></i></span>
+            </div>
             <div class="sidebar">
-                <a class="sidebar__item" href="/cabinet"> <b>&#9673;</b> КАБИНЕТ</a> 
-                <a class="sidebar__item" href="/cabinet/depozit"> <b>&#9673;</b> ДЕПОЗИТЫ</a> 
-                <a class="sidebar__item" href="/cabinet/partner"> <b>&#9673;</b> ПАРТНЕРЫ</a> 
-                <a class="sidebar__item" href="/cabinet/settings"> <b>&#9673;</b> НАСТРОЙКИ</a> 
-                <a class="sidebar__item" href="/cabinet/operations"> <b>&#9673;</b> ОПЕРАЦИИ</a> 
-                <a class="sidebar__item" href="/cabinet/vivod_sredstv"> <b>&#9673;</b> ВЫВОД СРЕДСТВ</a> 
-                <span class="sidebar__item log__out" ><b>&#9673;</b> ВЫХОД</span>
-                <div class="close__toggle"></div>
-             </div>
-
-             <div class="toggle">
-                <div class="open__toggle"></div>
+                <a class="sidebar__item" href="/cabinet">  <i class="fa-solid fa-user"></i> КАБИНЕТ</a> 
+                <a class="sidebar__item" href="/cabinet/depozit"> <i class="fa-solid fa-money-bill-transfer"></i> ДЕПОЗИТЫ</a> 
+                <a class="sidebar__item" href="/cabinet/partner"> <i class="fa-solid fa-user-group"></i> ПАРТНЕРЫ</a> 
+                <a class="sidebar__item" href="/cabinet/settings"> <i class="fa-solid fa-gear"></i> НАСТРОЙКИ</a> 
+                <a class="sidebar__item" href="/cabinet/operations"> <i class="fa-sharp fa-solid fa-chart-line"></i> ОПЕРАЦИИ</a> 
+                <a class="sidebar__item" href="/cabinet/vivod_sredstv"> <i class="fa-solid fa-sack-dollar"></i> ВЫВОД СРЕДСТВ</a> 
+                <span class="sidebar__item log__out" ><i class="fa-solid fa-right-from-bracket"></i> ВЫХОД</span>
              </div>
 
              <div class="operation">
@@ -62,18 +63,6 @@
         </section>
        
     </main>
-
-
-    <div class="modal">
-        <div class="modal__body">
-            <span>Действительно ли хотите выйти с аккаунта?</span>
-                
-            <div class="modal__btn__wrapper">
-                <button class="log__out__btn" >Да</button>
-                <button class="close__modal__btn">Нет</button>
-            </div>
-        </div>
-    </div>
     
     <script src="../sidebar.js"></script>
     <script src="./main.js"></script>

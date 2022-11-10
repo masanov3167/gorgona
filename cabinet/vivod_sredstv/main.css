@@ -12,7 +12,7 @@
 
 .balance__card{
     width: 100%;
-    background: rgba(255, 190, 3, 0.92);
+    background: var(--linear);
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 10px;
@@ -37,7 +37,7 @@ color: #000000;
     padding: 5px 8px;
     border-radius: 10px;
     border: none;
-    background: #FFBE03;
+    background: var(--linear);
     color: white;
 }
 .modal__wrapper{
@@ -67,7 +67,7 @@ color: #000000;
     text-align: center;
     width: inherit;
     height: auto;
-    background: #FFBE03;
+    background: var(--linear);
     border-radius: 10px 10px 0 0;
     position: fixed;
     margin-top: 0;

@@ -94,19 +94,18 @@
 .plan{
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-.plan__text{
-    width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+.plan__text{
+    width: 50%;
 }
 .plan__text > h3{
     font-weight: 900;
-font-size: 80px;
-color: #FFFFFF;
- margin-top: -25px;
+    font-size: 80px;
+    color: #FFFFFF;
+    margin-top: -25px;
 }
 
 .plan__text > div{
@@ -127,23 +126,15 @@ color: #FFFFFF;
     border-left: 3px solid #FFBE03;
 }
 
-.plan__form__container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .plan__card{
-    width: 35%;
+    width: 50%;
     background: white;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    margin-top: -190px;
+    margin: 0 auto;
 }
 .plan__card > h2:first-child{
     width: 100%;
@@ -169,56 +160,6 @@ color: #FFFFFF;
     font-size: 18px;
     color: #000000;
     margin: 10px 0;
-}
-
-.plan__form__container > div:last-child{
-    width: 59%;
-    height: auto;
-    padding: 25px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background: #FFFFFF;
-    border-radius: 30px;
-    margin-top: 80px;
-}
-.plan__form__card{
-    width: 48%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 30px;
-}
-.plan__form{
-    width: 48%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.plan__form > input{
-    width: 90%;
-    background: #f2f1f1;
-border: 1px solid #000000;
-border-radius: 30px;
-padding: 7px 10px;
-outline: none;
-margin: 20px 0;
-}
-
-.plan__form__button{
-    background: #FFBE03;
-border-radius: 30px;
-padding: 4px 10px;
-border: none;
-font-weight: 700;
-font-size: 15px;
-color: #FFFFFF;
 }
 
 /* shag styles */
@@ -348,20 +289,11 @@ color: #000000;
     .plan__text > div{
         width: 100%;
     }
-    .plan__form__container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
     .plan__card{
         margin-top: 70px;
         width: 65%;
     }
-    .plan__form__container > div:last-child{
-        width: 90%;
-    }
-
+    
     .shag__bg, .strength__bg{
         margin-top: 27rem;
     }
@@ -406,19 +338,6 @@ color: #000000;
     .plan__card > p{
         font-weight: 500;
         font-size: 13px;
-    }
-    .plan__form__container >div:last-child{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 13px;
-    }
-    .plan__form__card, .plan__form{
-        width: 100%;
-    }
-    .plan__form{
-        margin-top: 20px;
     }
 
     .strength__bg{

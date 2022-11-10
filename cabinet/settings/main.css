@@ -57,7 +57,7 @@ margin: 10px 0;
     padding: 5px 8px;
     border-radius: 10px;
     border: none;
-    background: #FFBE03;
+    background: var(--linear);
     color: white;
 }
 
