@@ -205,7 +205,7 @@ margin-top: 20px;
 @media only screen and (max-width: 963px){
     .header__nav{
         position: absolute;
-        top: 70px;
+        top: 63px;
         left: 40px;
         right: 0;
         display: flex;
@@ -213,7 +213,7 @@ margin-top: 20px;
         align-items: center;
         flex-direction: column;
         width: 50%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 63px);
         min-height: 500px;
         z-index: 3;
         background: linear-gradient(135deg,rgb(25, 27, 28) 0%,rgb(22, 12, 32) 100%);
