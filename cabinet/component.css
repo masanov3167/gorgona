@@ -70,9 +70,9 @@
 
 @media only screen and (max-width: 600px){
     .sidebar{
-        width: 55%;
+        width: 65%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: left;
         align-items: flex-start;
         height: calc(100vh - 60px);
         border-radius: 0 0 30px 30px;
