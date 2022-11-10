@@ -30,7 +30,7 @@
     height: calc(100vh - 60px);
     min-height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
     flex-direction: column;
     padding: 10px 15px;
@@ -83,7 +83,7 @@
         z-index: 5;
     }
     .sidebar__item{
-        margin: 10px 0;
+        margin: 5px 0;
     }
     .toggle{
         display: block;
