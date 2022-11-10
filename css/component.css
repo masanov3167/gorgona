@@ -55,19 +55,45 @@ color: #FFFFFF;
 }
 
 .toggle{
-   width: 30px;
-   height: 30px;
-   background: url('../images/nav3.jpg') no-repeat;
-   background-size: cover;
    display: none;
 }
-.close__nav{
-    width: 30px;
-   height: 30px;
-   background: url('../images/close_nav.jpg') no-repeat;
-   background-size: cover;
-   display: none;
+.toggle i {
+    color: white;
 }
+
+.toggle {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    display: none;
+  }
+  .toggle > span {
+    width: 28px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ff9100;
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+  .toggle > span:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  .toggle.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+  .toggle.active > span:nth-child(2) {
+    width: 0;
+  }
+  .toggle.active > span:nth-child(1),
+  .toggle.active > span:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  .toggle.active > span:nth-child(1) {
+    transform: translateY(9px);
+  }
+  .toggle.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+  }
 
 .secret__item{
     display: none;
@@ -179,29 +205,34 @@ margin-top: 20px;
 @media only screen and (max-width: 963px){
     .header__nav{
         position: absolute;
-        top: 0;
+        top: 70px;
         left: 40px;
         right: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         align-items: center;
         flex-direction: column;
-        width: 100%;
-        height: 400px;
+        width: 50%;
+        height: calc(100vh - 70px);
+        min-height: 500px;
         z-index: 3;
         background: linear-gradient(135deg,rgb(25, 27, 28) 0%,rgb(22, 12, 32) 100%);
         padding: 20px;
         transition-duration: 0.8s;
-        transform: translateY(-150%);
+        transform: translateX(-150%);
+    }
+
+    .header__nav__item{
+        margin: 17px 0;
     }
     .header__nav__item:hover{
-        width: 34%;
+        width: 50%;
     }
     .header__cabinet{
         display: none;
     }
-    .toggle, .close__nav{
-        display: block;
+    .toggle{
+        display: inline-block;
     }
     
     .referal{
